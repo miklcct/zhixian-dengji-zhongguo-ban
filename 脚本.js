@@ -170,7 +170,7 @@ function 计算() {
 
 window.onload = function () {
     表格 = document.getElementById('表格');
-    var 地图 = new Raphael('地图', 1024, 768);
+    var 地图 = new Raphael('地图');
     for (var 省名 in 中国) {
         var 省 = 中国[省名];
         var 图形 = 地图.path(省.路径);
@@ -202,6 +202,19 @@ window.onload = function () {
 
     document.getElementsByTagName('html')[0].onclick = function () {
         表格.style.display = 'none';
+    };
+
+    document.getElementById('产生图片').onclick = function () {
+        html2canvas(document.getElementById('地图')).then(
+            function (画布) {
+                var link = document.createElement('a');
+                link.download = '制县等级.png';
+                link.href = 画布.toDataURL();
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }
+        )
     }
 };
 

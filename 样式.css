@@ -37,6 +37,27 @@ h1 {
     cursor: pointer;
 }
 
+#产生图片 {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+#地图 {
+    position: relative;
+    width: 864px;
+    height: 720px;
+    background-color: lightskyblue;
+}
+
 th, td {
     padding: 0.2em;
+}
+
+footer {
+    font-size: x-small;
 }
