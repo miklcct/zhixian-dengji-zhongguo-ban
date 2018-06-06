@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="5334ffb0-da1b-460c-9533-7af33fce8fb8" name="miklcct.com" url="https://miklcct.com/制县等级中国版">
+        <fileTransfer host="miklcct.com" port="22" privateKey="$USER_HOME$/.ssh/id_rsa" rootFolder="/var/www/miklcct.com/public_html/制县等级中国版" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
