@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+html {
+    background-color: lightskyblue;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    left: 350px;
+}
+
+#表格 {
+    position: fixed;
+    display: none;
+}
+
+#表格, #图例 {
+    border: solid 2px;
+    border-radius: 5px;
+    border-spacing: 0;
+    text-align: center;
+}
+
+#图例 {
+    position: absolute;
+    top: 520px;
+    left: 125px;
+}
+
+#表格 th {
+    background-color: lightgrey;
+}
+
+#表格 td {
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+th, td {
+    padding: 0.2em;
+}

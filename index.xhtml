@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh" xml:lang="zh">
+    <head>
+        <link rel="stylesheet" href="样式.css" />
+        <script src="raphael.min.js" defer="defer" />
+        <script src="脚本.js" defer="defer" />
+    </head>
+    <body>
+        <div id="主容器">
+            <h1>制县等级 <span id="等级">0</span></h1>
+            <table id="图例">
+                <tr class="选择" data-级别="4"><td>4</td><td class="选择">住过</td></tr>
+                <tr class="选择" data-级别="3"><td>3</td><td class="选择">睡过</td></tr>
+                <tr class="选择" data-级别="2"><td>2</td><td class="选择">玩过</td></tr>
+                <tr class="选择" data-级别="1"><td>1</td><td class="选择">路过</td></tr>
+                <tr class="选择" data-级别="0"><td>0</td><td class="选择">没去过</td></tr>
+            </table>
+            <div id="地图"></div>
+            <table id="表格">
+                <tr>
+                    <th/>
+                </tr>
+                <tr><td class="选择" data-级别="4">住过</td></tr>
+                <tr><td class="选择" data-级别="3">睡过</td></tr>
+                <tr><td class="选择" data-级别="2">玩过</td></tr>
+                <tr><td class="选择" data-级别="1">路过</td></tr>
+                <tr><td class="选择" data-级别="0">没去过</td></tr>
+            </table>
+        </div>
+    </body>
+</html>
