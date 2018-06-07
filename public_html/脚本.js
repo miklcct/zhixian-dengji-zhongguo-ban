@@ -215,6 +215,8 @@ window.onload = function () {
                 document.body.removeChild(link);
             }
         )
-    }
+    };
+
+    document.getElementById('脸书').href = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURI(window.location.href);
 };
 

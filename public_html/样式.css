@@ -37,14 +37,29 @@ h1 {
     cursor: pointer;
 }
 
-#产生图片 {
+#分享 {
+    padding: 20px;
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    bottom: 0;
+    right: 0;
+}
+
+#分享 a {
+    margin: 5px;
     padding: 5px;
     border-radius: 5px;
-    background-color: lightgrey;
     cursor: pointer;
+    text-decoration: none;
+}
+
+#脸书 {
+    background-color: #3b5998;
+    color: white;
+}
+
+#产生图片 {
+    background-color: lightgrey;
+    color: black;
 }
 
 #地图 {
