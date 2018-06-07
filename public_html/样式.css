@@ -19,6 +19,7 @@ h1 {
 #表格 {
     position: fixed;
     display: none;
+    z-index: 1000;
 }
 
 #表格, #图例 {
