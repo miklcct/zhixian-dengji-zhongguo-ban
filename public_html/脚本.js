@@ -169,6 +169,24 @@ function 计算() {
 }
 
 window.onload = function () {
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    if (追踪代码 !== null) {
+        var ga = document.createElement('script');
+        ga.setAttribute('async', 'async');
+        ga.setAttribute('src', 'https://www.googletagmanager.com/gtag/js?id=' + 追踪代码);
+
+        var head = document.getElementsByTagName('head')[0];
+        head.insertBefore(ga, head.firstChild);
+
+        window.dataLayer = window.dataLayer || [];
+
+        gtag('js', new Date());
+        gtag('config', 追踪代码);
+    }
+
     表格 = document.getElementById('表格');
     var 地图 = new Raphael('地图');
     for (var 省名 in 中国) {
