@@ -1,1 +1,1 @@
-只须把public_html资料夹内的全部内容放到网站即可。
+把public_html资料夹内的全部内容放到网站，然后把ga.example.js复制到ga.js,如有的话填进Google Analytics代码。
