@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="miklcct.com">
+  <component name="PublishConfigData" serverName="production">
     <serverData>
-      <paths name="miklcct.com">
+      <paths name="production">
         <serverdata>
           <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$/public_html" web="/" />
+            <mapping deploy="/public_html" local="$PROJECT_DIR$/public_html" web="/" />
           </mappings>
         </serverdata>
       </paths>
