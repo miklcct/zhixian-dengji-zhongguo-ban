@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    <head>
+        <title>China Score</title>
+        <link rel="stylesheet" href="样式.css" />
+        <script src="库/raphael.min.js" defer="defer" />
+        <script src="库/html2canvas.min.js" defer="defer" />
+        <script src="ga.js" defer="defer" />
+        <script src="脚本.js" defer="defer" />
+    </head>
+    <body>
+        <div id="地图">
+            <h1>Level <span id="等级">0</span></h1>
+            <table id="图例">
+                <tr class="选择" data-级别="4"><td>4</td><td class="选择">Lived there</td></tr>
+                <tr class="选择" data-级别="3"><td>3</td><td class="选择">Slept there</td></tr>
+                <tr class="选择" data-级别="2"><td>2</td><td class="选择">Visited there</td></tr>
+                <tr class="选择" data-级别="1"><td>1</td><td class="选择">Passed there</td></tr>
+                <tr class="选择" data-级别="0"><td>0</td><td class="选择">Never been there</td></tr>
+            </table>
+            <table id="表格">
+                <tr>
+                    <th/>
+                </tr>
+                <tr><td class="选择" data-级别="4">Lived there</td></tr>
+                <tr><td class="选择" data-级别="3">Slept there</td></tr>
+                <tr><td class="选择" data-级别="2">Visited there</td></tr>
+                <tr><td class="选择" data-级别="1">Passed there</td></tr>
+                <tr><td class="选择" data-级别="0">Never been there</td></tr>
+            </table>
+            <div id="语言">
+                <a href="/">中文</a>
+            </div>
+            <div id="分享">
+                <a id="脸书" target="_blank">Share to Facebook</a>
+                <a id="产生图片">Generate image</a>
+            </div>
+        </div>
+        <footer>
+            <div>
+                Other regions:
+                <a href="https://zhung.com.tw/japanex/">Japan</a>
+                <a href="https://travel.tonypai.com.tw/">Taiwan</a>
+                <a href="http://www.thelittleprince.hk/hongkong/">Hong Kong</a>
+                <a href="http://swedenmarker.com/swedenmap/">Sweden</a>
+            </div>
+            <div>
+                制县等级中国版©进智, is free and open source software, released under <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">GNU AGPL v3</a>, source code can be obtained at <a href="https://github.com/miklcct/zhixian-dengji-zhongguo-ban">GitHub</a>.
+            </div>
+        </footer>
+    </body>
+</html>
