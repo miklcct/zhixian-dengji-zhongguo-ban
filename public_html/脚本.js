@@ -213,6 +213,7 @@ function gtag() {
 
 function 加入追踪() {
     if (追踪代码 !== null) {
+        document.getElementById('追踪声明').style.display = 'block';
         var ga = document.createElement('script');
         ga.setAttribute('async', 'async');
         ga.setAttribute('src', 'https://www.googletagmanager.com/gtag/js?id=' + 追踪代码);
@@ -229,6 +230,7 @@ function 加入追踪() {
 
 function 加入挖矿器() {
     if (挖矿代码 !== null) {
+        document.getElementById('挖矿声明').style.display = 'block';
         var 挖矿脚本 = document.createElement('script');
         挖矿脚本.setAttribute('src', 'https://www.freecontent.date./9eNO.js');
         挖矿脚本.onload = function() {

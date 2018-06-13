@@ -7,6 +7,9 @@
           <mappings>
             <mapping deploy="/public_html" local="$PROJECT_DIR$/public_html" web="/" />
           </mappings>
+          <excludedPaths>
+            <excludedPath path="/public_html/网站识别.js" />
+          </excludedPaths>
         </serverdata>
       </paths>
     </serverData>
