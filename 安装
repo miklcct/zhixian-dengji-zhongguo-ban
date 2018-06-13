@@ -1,1 +1,1 @@
-把public_html资料夹内的全部内容放到网站，如有Google Analytics代码就填进ga.js。
+把public_html资料夹内的全部内容放到网站，如有Google Analytics或CoinImp代码就填进网站识别.js。

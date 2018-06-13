@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="production">
+  <component name="PublishConfigData" serverName="production" overwriteAll="false" deleteMissingItems="true">
     <serverData>
       <paths name="production">
         <serverdata>
           <mappings>
             <mapping deploy="/public_html" local="$PROJECT_DIR$/public_html" web="/" />
           </mappings>
-          <excludedPaths>
-            <excludedPath path="/public_html/ga.js" />
-          </excludedPaths>
         </serverdata>
       </paths>
     </serverData>
