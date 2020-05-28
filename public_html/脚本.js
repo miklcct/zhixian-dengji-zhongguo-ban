@@ -270,8 +270,19 @@ window.onload = function () {
     };
 
     document.getElementById('产生图片').onclick = function () {
+        const 隐藏元素 = ['分享', '脸书', '语言'];
+        隐藏元素.forEach(
+            function (元素) {
+                document.getElementById(元素).style.display = 'none';
+            }
+        );
         html2canvas(document.getElementById('地图')).then(
             function (画布) {
+                隐藏元素.forEach(
+                    function (元素) {
+                        document.getElementById(元素).style.removeProperty('display');
+                    }
+                );
                 var link = document.createElement('a');
                 link.download = '制县等级.png';
                 link.href = 画布.toDataURL();
@@ -279,7 +290,7 @@ window.onload = function () {
                 link.click();
                 document.body.removeChild(link);
             }
-        )
+        );
     };
 
     document.getElementById('脸书').href = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURI(window.location.href);
