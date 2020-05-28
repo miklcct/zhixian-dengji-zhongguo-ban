@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig host="miklcct.com" id="c4f405bf-6ef6-4e05-94b7-6836a56a94a4" keyPath="$USER_HOME$/.ssh/id_rsa" port="22" customName="production" nameFormat="CUSTOM" username="michael" />
+    </configs>
+  </component>
+</project>
